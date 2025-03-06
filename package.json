@@ -10,7 +10,7 @@
   "main": "test2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon test2"
+    "start":"nodemon test2v2"
    
   },
   "keywords": [],

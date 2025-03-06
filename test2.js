@@ -6,7 +6,7 @@ const POKEMON_NAME_PRITES = "https://pokeapi.co/api/v2/pokemon-form/1"
 
 app.use(express.json())
 
-app.post("/api", async (req, res) => {
+app.post("/api/:id", async (req, res) => {
     try {
         const { id } = req.body
         if (!id) {
@@ -42,7 +42,7 @@ app.post("/api", async (req, res) => {
         })
 
     } catch (err) {
-
+        console.log(err)
         res.status(500).json({
             message: "Server Error"
         })
